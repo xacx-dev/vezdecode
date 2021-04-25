@@ -4,7 +4,7 @@ import time
 
 api_url = 'https://api.vk.com/method'
 token = 'a8d60760876c1a72d825f19bf112bc0ce9b28702101b8aa24ce1b3ef80181ce1f7cefb5c4d85cff321be0'
-chat_id = 92
+chat_id = 130
 
 get_users_in_chat = requests.get(f"{api_url}/messages.getChat?chat_id={chat_id}&access_token={token}&v=5.130").json()['response']['users']
 ids = []
